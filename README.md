@@ -13,7 +13,9 @@ Real-Time Face Detection With Computer Vision
 Please ⭐️ this repo and share it with others
 
 ### Screenshots
-..Soon!
+Prayer times           |
+:---------------------:|
+![face detection - screenshoot](screenshots/face_detection.gif) |
 
 ### Requirements
 * Java +8

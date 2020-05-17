@@ -7,6 +7,6 @@ import lombok.Data;
 @Data
 @AllArgsConstructor
 public class DetectedFace {
-    private Image output;
+    private Image outputImg; // Output image
     private int nbrOfFaces; // Number of faces
 }

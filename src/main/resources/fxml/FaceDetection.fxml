@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.TextFlow?>
+
+<BorderPane stylesheets="@../css/face-detection.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.houarizegai.facedetection.controllers.FaceDetectionController">
+   <center>
+      <StackPane fx:id="imgContainer" styleClass="imgContainer">
+         <children>
+            <ImageView fx:id="imageView" fitHeight="480.0" fitWidth="640.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </StackPane>
+   </center>
+   <bottom>
+      <HBox fx:id="bottomHBox" alignment="BOTTOM_CENTER" spacing="20.0" style="-fx-background-color: #EEE;" BorderPane.alignment="CENTER">
+         <children>
+            <FontAwesomeIconView glyphName="REPEAT" onMouseClicked="#onReload" size="30" styleClass="icon" />
+            <FontAwesomeIconView glyphName="CAMERA" onMouseClicked="#onCapture" size="35" styleClass="icon" />
+            <FontAwesomeIconView glyphName="DOWNLOAD" onMouseClicked="#onSave" size="30" styleClass="icon" />
+         </children>
+         <padding>
+            <Insets bottom="10.0" top="10.0" />
+         </padding>
+      </HBox>
+   </bottom>
+   <top>
+      <HBox alignment="CENTER" spacing="5.0" BorderPane.alignment="CENTER">
+         <children>
+            <FontAwesomeIconView fill="DARKCYAN" glyphName="EYE" size="25" />
+            <TextFlow textAlignment="CENTER">
+               <children>
+                  <Label styleClass="lbl" text="Number of faces: " />
+                  <Label fx:id="lblNbrOfFaces" styleClass="lbl" text="0" textFill="DARKCYAN" />
+               </children>
+            </TextFlow>
+         </children>
+      </HBox>
+   </top>
+</BorderPane>

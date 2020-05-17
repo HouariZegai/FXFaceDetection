@@ -1,0 +1,12 @@
+.lbl {
+    -fx-font-size: 16px
+}
+
+.imgContainer {
+    -fx-background-color: #666
+}
+
+.icon {
+    -fx-fill: darkcyan;
+    -fx-cursor: hand
+}

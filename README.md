@@ -13,7 +13,7 @@ Real-Time Face Detection With Computer Vision
 Please ⭐️ this repo and share it with others
 
 ### Screenshots
-Prayer times           |
+Face Detection           |
 :---------------------:|
 ![face detection - screenshoot](screenshots/face_detection.gif) |
 
